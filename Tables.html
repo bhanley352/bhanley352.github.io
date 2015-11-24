@@ -99,13 +99,16 @@
             </div>
         </div>
         <div class="col-md-9">
-            <div id="table1" class="list-group">
+            <div id="table1" class="col-md-3 list-group">
                 <div class="list-group-item header">Table 1</div>
                 <div class="list-group-item header people"></div>
             </div>
-
-            <div id="table2" class="list-group">
+            <div id="table2" class="col-md-3 list-group">
                 <div class="list-group-item header">Table 2</div>
+                <div class="list-group-item header people"></div>
+            </div>
+            <div id="table3" class="col-md-3 list-group">
+                <div class="list-group-item header">Table 3</div>
                 <div class="list-group-item header people"></div>
             </div>
         </div>
@@ -133,7 +136,8 @@
     <script>
         Sortable.create(simpleList, { group: "tables", pull: true, put: true });
         Sortable.create(table1, { group: "tables", pull: true, put: true, filter:".header", draggable:".people" });
-        Sortable.create(table2, { group: "tables", pull: true, put: true, filter:".header", draggable:".people"});</script>
+        Sortable.create(table2, { group: "tables", pull: true, put: true, filter: ".header", draggable: ".people" });
+        Sortable.create(table3, { group: "tables", pull: true, put: true, filter: ".header", draggable: ".people" });</script>
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
